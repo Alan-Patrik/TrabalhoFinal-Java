@@ -212,7 +212,35 @@ public class PresidenteContaPoupanca {
 					}
 					
 				case 2:
-					// RendimentoPoupanca();
+					System.out.println("|_____________________________________________________________________________________|");
+					System.out.println("|                                                                                     |");
+					System.out.println("|                  [1] 7 dias                             [2] 15 dias                 |");
+					System.out.println("|                                                                                     |");
+					System.out.println("|                  [3] 30 dias                            [4] Voltar                  |");
+					System.out.println("|_____________________________________________________________________________________|");
+					int escolhaRendimento = scan.nextInt();
+					
+					if(escolhaRendimento == 1) {
+						// ImprimeRendimento() 7 dias;
+						
+					} else if(escolhaRendimento == 2) {
+						// ImprimeRendimento() 15 dias;
+						
+					} else if(escolhaRendimento == 3) {
+						// ImprimeRendimento() 30 dias;
+						
+					} else if(escolhaRendimento == 4) {
+						/*System.out.println("|_____________________________________________________________________________________|");
+						System.out.println("|                                                                                     |");
+						System.out.println("|          [1] Saldo                               [2] Rendimento Poupanca            |");
+						System.out.println("|          [3] Clientes do Sistem                  [4] Capital Geral da Empresa       |");
+						System.out.println("|                                                                                     |");
+						System.out.println("|          [5] Voltar                                                                 |");
+						System.out.println("|_____________________________________________________________________________________|");
+						int escolha4 = scan.nextInt();
+						*/
+					}
+					break;
 							
 				case 3:
 					// RelatorioDeClientesDoSistema();
@@ -249,8 +277,8 @@ public class PresidenteContaPoupanca {
 					System.out.println("|       [1] Movimentacoes                [2] Relatorios                [3] Sair       |");
 					System.out.println("|_____________________________________________________________________________________|");
 					int operacao = scan.nextInt();
-					
-					break;*/					
+					*/
+				break;
 			}
 		}
 		

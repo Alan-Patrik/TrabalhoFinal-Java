@@ -227,8 +227,8 @@ public class DiretorContaCorrente {
 					System.out.println("|       [1] Movimentacoes                [2] Relatorios                [3] Sair       |");
 					System.out.println("|_____________________________________________________________________________________|");
 					int operacao = scan.nextInt();
-					
-					break;*/		
+					*/
+				break;
 			}
 		}
 		
