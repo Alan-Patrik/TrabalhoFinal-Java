@@ -1,5 +1,5 @@
-import java.util.*;
-public class Main {
+import java.util.Scanner;
+public class PresidenteContaCorrente {
 
 	public static void main(String[] args) {
 
@@ -37,8 +37,6 @@ public class Main {
 			System.out.println("|                                                                                     |");
 			System.out.println("|              [3] Tranferir                               [4] Voltar                 |");
 			System.out.println("|_____________________________________________________________________________________|");
-			
-			
 			int escolha1 = scan.nextInt();
 			System.out.println("|                                                                                     |");
 			
@@ -53,6 +51,7 @@ public class Main {
 					System.out.println("|              [1] R$10,00                                 [2] R$25,00                |");
 					System.out.println("|              [3] R$50,00                                 [4] R$100,00               |");
 					System.out.println("|              [5] R$200,00                                [6] Outro valor            |");
+					System.out.println("|                                                                                     |");
 					System.out.println("|              [7] Voltar                                                             |");
 					System.out.println("|_____________________________________________________________________________________|");
 					int valor1 = scan.nextInt();
@@ -112,8 +111,20 @@ public class Main {
 						} else {
 							System.out.println("|   Operacao cancelada!                                                               |");
 						}
+					} else if(valor1 == 7) {
+						/*//Menu de saque;
+						System.out.println("|_____________________________________________________________________________________|");
+						System.out.println("|                                                                                     |");
+						System.out.println("|              [1] Sacar                                   [2] Depositar              |");
+						System.out.println("|                                                                                     |");
+						System.out.println("|              [3] Tranferir                               [4] Voltar                 |");
+						System.out.println("|_____________________________________________________________________________________|");
+						int escolha1 = scan.nextInt();
+						System.out.println("|                                                                                     |");
+						*/
 					}
 					break;
+				
 			
 				case 2:
 			
@@ -165,9 +176,9 @@ public class Main {
 		else if(operacao == 2) {
 			System.out.println("|_____________________________________________________________________________________|");
 			System.out.println("|                                                                                     |");
-			System.out.println("|              [1] Saldo                                   [2] Tarifas                |");
-			System.out.println("|                                                                                     |");
-			System.out.println("|              [3] Rendimento Poupança                     [4] Voltar                 |");
+			System.out.println("|          [1] Saldo                                 [2] Relatorio Tarifacao          |");
+			System.out.println("|          [3] Informaçoes de Tarifas                [4] Clientes do Sistema          |");
+			System.out.println("|          [5] Capital Geral da Empresa              [6] Voltar                       |");
 			System.out.println("|_____________________________________________________________________________________|");
 			int escolha4 = scan.nextInt();
 					
@@ -176,24 +187,63 @@ public class Main {
 				case 1:
 					System.out.println("|_____________________________________________________________________________________|");
 					System.out.println("|                                                                                     |");
-					System.out.println("|           [1] Saldo na tela                             [3] Imprimir Saldo          |");
+					System.out.println("|          [1] Saldo na tela          [2] Imprimir Saldo          [3] Voltar          |");
 					System.out.println("|_____________________________________________________________________________________|");
 					int escolhaSaldo = scan.nextInt();
 					if (escolhaSaldo == 1) {
 						// ImprimeSaldo();
 						// So o valor do saldo;
-					} else {
+					} else if(escolhaSaldo == 2) {
 						// ImprimeRelatorioSaldo();
 						// Informacoes da conta e o valor de saldo;
-							}
+					} else if(escolhaSaldo == 3) {
+						/*// Voltar ao Menu de Relatorio;
+						System.out.println("|_____________________________________________________________________________________|");
+						System.out.println("|                                                                                     |");
+						System.out.println("|          [1] Saldo                                 [2] Relatorio Tarifacao          |");
+						System.out.println("|          [3] Informaçoes de Tarifas                [4] Clientes do Sistema          |");
+						System.out.println("|          [5] Capital Geral da Empresa              [6] Voltar                       |");
+						System.out.println("|_____________________________________________________________________________________|");
+						int escolha4 = scan.nextInt();
+						
+						break*/
+					}
+					
 				case 2:
-					// MostraTarifa();
+					// RlatorioTarifacao();
 							
 				case 3:
-					// ImprimeRendimentoPoupanca();
+					// InformacoesDeTarifas();
 								
 							
 				case 4:
+					// RelatorioDeClientesDoSistema();
+					
+				case 5:
+					// Menu de captal do banco();
+					System.out.println("|_____________________________________________________________________________________|");
+					System.out.println("|                                                                                     |");
+					System.out.println("|      [1] Saldo Total Geral       [2] Total de tarifas cobradas       [3] Voltar     |");
+					System.out.println("|_____________________________________________________________________________________|");
+					int operacao3 = scan.nextInt();
+					if(operacao3 == 1) {
+						// SaldoTotalGeral();
+					} else if(operacao3 == 2) {
+						//TotalDeTarifasCobradas();
+					} else if(operacao3 == 3){
+						/*// Voltar ao Menu de Relatorio;
+						System.out.println("|_____________________________________________________________________________________|");
+						System.out.println("|                                                                                     |");
+						System.out.println("|          [1] Saldo                                 [2] Relatorio Tarifacao          |");
+						System.out.println("|          [3] Informaçoes de Tarifas                [4] Clientes do Sistema          |");
+						System.out.println("|          [5] Capital Geral da Empresa              [6] Voltar                       |");
+						System.out.println("|_____________________________________________________________________________________|");
+						int escolha4 = scan.nextInt();
+						
+						break*/
+					}
+				
+				case 6:
 					/*// Volta ao menu principal;
 					// FuncaoMenu();
 					System.out.println("|_____________________________________________________________________________________|");
@@ -202,7 +252,7 @@ public class Main {
 					System.out.println("|_____________________________________________________________________________________|");
 					int operacao = scan.nextInt();
 					
-					break;*/					
+					break;*/		
 			}
 		}
 		
